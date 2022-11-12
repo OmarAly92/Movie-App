@@ -1,0 +1,4 @@
+enum Track{
+  start,
+  end,
+}
