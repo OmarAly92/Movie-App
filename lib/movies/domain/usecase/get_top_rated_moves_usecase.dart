@@ -1,15 +1,17 @@
 import 'package:clean_arc_movies/movies/domain/entities/movie_entities.dart';
 import 'package:dartz/dartz.dart';
 
+import '../../../core/base_usecases/base_usecases.dart';
 import '../../../core/errors/failure.dart';
 import '../repository/base_movies_repository.dart';
 
-class GetTopRatedMoviesUseCase{
+class GetTopRatedMoviesUseCase extends BaseUseCases<List<Movie>> {
   BaseMoviesRepository baseMoviesRepository;
 
   GetTopRatedMoviesUseCase(this.baseMoviesRepository);
 
-  Future<Either<Failure, List<Movie>>> execute()async{
+  @override
+  Future<Either<Failure, List<Movie>>> call() async {
     return await baseMoviesRepository.getTopRatedMovies();
   }
 }
