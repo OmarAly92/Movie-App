@@ -23,6 +23,6 @@ class MovieDetailsModel extends MovieDetails {
         id: json['id'],
         title: json['title'],
         overView: json['overview'],
-        voteAverage: json['vote_average'],
+        voteAverage: json['vote_average'].toDouble(),
       );
 }

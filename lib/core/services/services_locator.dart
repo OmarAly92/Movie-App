@@ -4,20 +4,25 @@ import 'package:clean_arc_movies/movies/domain/repository/base_movies_repository
 import 'package:clean_arc_movies/movies/domain/usecase/get_now_playing_movies_usecase.dart';
 import 'package:clean_arc_movies/movies/domain/usecase/get_popular_movies_usecase.dart';
 import 'package:clean_arc_movies/movies/domain/usecase/get_top_rated_moves_usecase.dart';
+import 'package:clean_arc_movies/movies/presentation/controller/movie_details_bloc.dart';
 import 'package:clean_arc_movies/movies/presentation/controller/movies_bloc.dart';
 import 'package:get_it/get_it.dart';
+
+import '../../movies/domain/usecase/get_movie_details_usecase.dart';
 
 final sl = GetIt.instance;
 
 class ServicesLocator {
   void init() {
     /// Bloc
-    sl.registerFactory(() => MoviesBloc(sl(),sl(),sl()));
+    sl.registerFactory(() => MoviesBloc(sl(), sl(), sl()));
+    sl.registerFactory(() => MovieDetailsBloc(sl()));
 
     /// Use Cases
     sl.registerLazySingleton(() => GetNowPlayingMoviesUseCase(sl()));
     sl.registerLazySingleton(() => GetPopularMoviesUseCase(sl()));
     sl.registerLazySingleton(() => GetTopRatedMoviesUseCase(sl()));
+    sl.registerLazySingleton(() => GetMovieDetailsUseCase(sl()));
 
     /// Repository
     sl.registerLazySingleton<BaseMoviesRepository>(
