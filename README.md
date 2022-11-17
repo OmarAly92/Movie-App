@@ -2,6 +2,9 @@
 
 A new Flutter project.
 
+README Image Text
+![Movies App](screen shots/movie app home screen)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

@@ -41,7 +41,10 @@ class MovieDetailContent extends StatelessWidget {
       builder: (context, state) {
         switch (state.movieDetailsState) {
           case RequestState.loading:
-            return const Center(child: CircularProgressIndicator(color: Colors.white,));
+            return const Center(
+                child: CircularProgressIndicator(
+              color: Colors.white,
+            ));
           case RequestState.loaded:
             return CustomScrollView(
               key: const Key('movieDetailScrollView'),
@@ -246,7 +249,11 @@ class MovieDetailContent extends StatelessWidget {
                 duration: const Duration(milliseconds: 500),
                 child: InkWell(
                   onTap: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => MovieDetailScreen(id: state.recommendation[index].id)));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => MovieDetailScreen(
+                                id: state.recommendation[index].id)));
                   },
                   child: ClipRRect(
                     borderRadius: const BorderRadius.all(Radius.circular(4.0)),
