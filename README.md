@@ -2,8 +2,13 @@
 
 A new Flutter project.
 
+## Home screen
+
 
 ![Home screen](screen_shots/movie-app-home-screen.jpg)
+
+
+## Details screen
 
 
 ![Details screen](screen_shots/movie-app-details-screen.jpg)
