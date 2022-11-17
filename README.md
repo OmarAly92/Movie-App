@@ -4,6 +4,8 @@ A new Flutter project.
 
 
 ![Home screen](screen_shots/movie-app-home-screen.jpg)
+
+
 ![Details screen](screen_shots/movie-app-details-screen.jpg)
 
 ## Getting Started
