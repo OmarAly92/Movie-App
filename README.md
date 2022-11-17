@@ -1,6 +1,6 @@
-# clean_arc_movies
+# Movie App
 
-A new Flutter project.
+A new Flutter project using clean architecture
 
 ## Home screen
 
