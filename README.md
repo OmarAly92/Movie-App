@@ -3,7 +3,7 @@
 A new Flutter project.
 
 README Image Text
-![Movies App](screen shots/movie app home screen)
+![Movies App](screen_shots/movie-app-home-screen.jpg)
 
 ## Getting Started
 
