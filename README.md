@@ -1,23 +1,22 @@
 # Movie App
 
-A new Flutter project using clean architecture
+Movie Pro is your ultimate companion for discovering and exploring movies. With a vast collection of films from various genres and eras, Movie Pro offers a seamless browsing experience to cater to every movie enthusiast's taste. Whether you're into action, romance, comedy, or documentaries, Movie Pro has something for everyone.
 
-## Home screen
+## Technologies:
+
+- Clean Architecture
+- Bloc (state management)
+- Dio
+- Responsive UI
 
 
-![Home screen](screen_shots/movie-app-home-screen.jpg)
+## Here some pictures of the project:
+
+<img src = "screen_shots/movie-app-home-screen.jpg" height ="500"> <img src = "screen_shots/movie-app-details-screen.jpg" height ="500">
 
 
-## Details screen
 
 
-![Details screen](screen_shots/movie-app-details-screen.jpg)
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
